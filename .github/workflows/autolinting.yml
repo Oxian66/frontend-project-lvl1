@@ -1,4 +1,4 @@
-name: lint-automatization
+name: autolinting
 on:
  - push
  - pull_request
