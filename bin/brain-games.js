@@ -1,8 +1,4 @@
 #!/usr/bin/env node 
-import readlineSync from "readline-sync";
+import greeting from '../src/cli.js'
 
-console.log('Welcome To The Brain Games');
-
-const playerName = readlineSync.question("May I have your name?");
-
-console.log(`Hello  ${playerName}!`);
+greeting();
