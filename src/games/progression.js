@@ -1,8 +1,8 @@
-import runBrainGames from "../index.js";
+import runBrainGames from '../index.js';
 
-import getRandomNumber from "../generateRandomNumber.js";
+import getRandomNumber from '../generateRandomNumber.js';
 
-const gameRules = "What number is missing in the progression?";
+const gameRules = 'What number is missing in the progression?';
 
 const getProgression = (begining, interval, length) => {
   const progression = [];
@@ -21,12 +21,12 @@ const makeGame = () => {
   const progression = getProgression(
     progressionBeginning,
     progressionInterval,
-    progressionLength
+    progressionLength,
   );
   const askedNumIndex = getRandomNumber(0, progressionLength - 1);
   const correctAnswer = String(progression[askedNumIndex]); // Memorizing number to ask
-  progression[askedNumIndex] = ".."; // Hide number to ask
-  const question = progression.join(" ");
+  progression[askedNumIndex] = '..'; // Hide number to ask
+  const question = progression.join(' ');
 
   return [question, correctAnswer];
 };

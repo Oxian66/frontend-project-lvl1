@@ -1,9 +1,10 @@
 import runBrainGames from '../index.js';
 import getRandomNumber from '../generateRandomNumber.js';
+
 const gameRules = 'What is the result of the expression?';
 
 const calculateOperators = (num1, num2, operator) => {
-    const error = 'Wrong expression operator!';
+  const error = 'Wrong expression operator!';
   switch (operator) {
     case '+': return num1 + num2;
     case '-': return num1 - num2;
@@ -25,4 +26,5 @@ const makeGame = () => {
 
 const runBrainCalc = () => runBrainGames(makeGame, gameRules);
 
+// eslint-disable-next-line eol-last
 export default runBrainCalc;
