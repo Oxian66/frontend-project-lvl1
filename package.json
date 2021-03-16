@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Oxian66/frontend-project-lvl1#readme",
   "type": "module",
   "bin": {
+    "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
